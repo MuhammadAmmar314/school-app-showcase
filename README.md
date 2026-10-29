@@ -80,6 +80,12 @@ Formulir pendaftaran calon siswa tanpa login dengan penerbitan bukti pendaftaran
 
 ---
 
+### 8. Manajemen Lisensi & Pembatasan Domain Kriptografis (`/license/activate`)
+Sistem dilengkapi proteksi aktivasi domain berbasis tanda tangan digital (HMAC SHA-256) untuk mengontrol kuota kloning:
+![Manajemen Lisensi](screenshots/16_license_domain_manager.png)
+
+---
+
 ## 🌟 4 Portal Pengguna Terintegrasi (Strict Multi-Role RBAC)
 
 Aplikasi ini membagi hak akses ke dalam 4 portal terisolasi:
@@ -159,9 +165,32 @@ Aplikasi ini membagi hak akses ke dalam 4 portal terisolasi:
 │ Adapter   : Inertia.js v1 (SPA Monolith)               │
 │ Build Tool: Vite 5 (Hot Module Replacement)            │
 │ Database  : MySQL 8.x / MariaDB (19 Relational Tables) │
-│ Tests     : PHPUnit Feature & Unit Tests (51 Passed)   │
+│ Tests     : PHPUnit Feature & Unit Tests (57 Passed)   │
 └────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 🛡️ Sistem Manajemen Lisensi & Hak Kloning (HMAC SHA-256)
+
+Aplikasi master project ini telah dilengkapi dengan arsitektur **Cryptographic License Manager (`App\Services\LicenseService`)**:
+1. **Pencegahan Kloning Tanpa Izin**: Setiap kunci lisensi (`SKL-...`) ditandatangani secara kriptografis menggunakan algoritma **HMAC SHA-256**. Manipulasi payload (seperti mengubah batas domain atau tier secara sepihak) otomatis merusak tanda tangan digital.
+2. **Pembatasan Kuota Domain (Domain Quota Enforcement)**:
+   - **Single School**: Otomatis mengunci (*bind*) pada 1 nama domain aktif.
+   - **Multi-School (Agensi)**: Mengizinkan aktivasi otomatis hingga kuota **5 domain sekolah**. Upaya instalasi pada domain ke-6 akan otomatis dialihkan ke layar aktivasi `/license/activate` dan menolak akses operasional sebelum lisensi di-upgrade.
+   - **Enterprise White-Label**: Unlimited domain tanpa batasan kuota.
+3. **CLI Generator untuk Developer / Pemilik**:
+   ```bash
+   # Generate key untuk pembeli Single School:
+   php artisan license:generate --client="SMAN 1 Nusantara" --tier=single
+
+   # Generate key untuk pembeli Multi-School (5 Sekolah):
+   php artisan license:generate --client="Yayasan Pendidikan Bersama" --tier=multi_school --max-domains=5
+
+   # Cek status lisensi instalasi:
+   php artisan license:status
+   ```
+4. **Bypass Lingkungan Pengembangan**: Domain lokal (`localhost`, `127.0.0.1`, `school-app.test`) otomatis dibebaskan dari kewajiban aktivasi agar tidak mengganggu proses coding dan testing lokal Anda.
 
 ---
 

@@ -1,4 +1,4 @@
-﻿# SekolahApp Enterprise Commercial License Agreement
+# SekolahApp Enterprise Commercial License Agreement
 
 Copyright (c) 2026 SekolahApp. All Rights Reserved.
 
@@ -12,18 +12,28 @@ Dengan membeli dan mengunduh kode sumber (source code) lengkap SekolahApp, Anda 
 
 ### A. Lisensi Standar (Single School / 1 Domain)
 - Diberikan hak untuk menginstal dan menggunakan SekolahApp pada **1 (satu) instansi sekolah / 1 nama domain**.
-- Akses penuh terhadap seluruh source code Laravel 11 & Tailwind CSS untuk keperluan kustomisasi internal instansi tersebut.
+- Dilengkapi **License Key Kriptografis (HMAC SHA-256)** dengan kuota 1 domain aktif.
+- Akses penuh terhadap seluruh source code Laravel & React untuk keperluan kustomisasi internal instansi tersebut.
 - **Dilarang**: Menyebarkan, menjual ulang, atau memasang source code pada lebih dari 1 sekolah/domain tanpa membeli lisensi tambahan.
 
 ### B. Lisensi Multi-Sekolah (Hingga 5 Instansi)
 - Diberikan hak untuk memasang dan menjalankan sistem pada hingga **5 (lima) instansi sekolah** di bawah payung yayasan yang sama atau dikelola oleh agensi yang sama.
-- Akses penuh source code dan konfigurasi identitas sekolah dinamis (`config/sekolah.php`).
+- Dilengkapi **Multi-Domain License Key** dengan kuota auto-bind hingga 5 domain aktif secara teknis. Instalasi pada domain ke-6 akan otomatis terkunci kecuali dilakukan upgrade kuota.
+- Akses penuh source code dan konfigurasi identitas sekolah dinamis (`config/school.php`).
 - **Dilarang**: Menjual ulang kode sumber secara publik atau mengklaim kepemilikan hak cipta atas core framework.
 
 ### C. Lisensi White-Label & Developer (Unlimited Deployments)
 - Diberikan hak penuh untuk melakukan *rebranding* (mengganti nama produk, logo, tema) dan menginstal pada jumlah instansi sekolah **tanpa batas**.
+- Dilengkapi **Enterprise Unlimited License Key** (tanpa batasan kuota domain).
 - Cocok untuk Software House, IT Consultant, atau Agensi EduTech yang menjual solusi turnkey ke sekolah-sekolah.
 - **Dilarang keras**: Mengunggah kembali (*re-upload*) source code ke repositori publik (GitHub, GitLab publik, forum unduhan, dsb.) atau mendistribusikannya secara gratis.
+
+---
+
+## 2. Mekanisme Proteksi & Verifikasi Teknis (DRM & Activation)
+1. **Verifikasi Kriptografis**: Setiap instalasi di luar server lokal pengujian diverifikasi menggunakan tanda tangan digital HMAC SHA-256 (`LicenseService`).
+2. **Kloning & Kuota Domain**: Sistem mencatat domain resmi yang diaktivasi. Jika batas kuota paket Multi-School (5 domain) tercapai, sistem akan mengarahkan domain baru ke halaman aktivasi `/license/activate` dan menolak akses operasional sampai kuota ditambah.
+3. **Bypass Pengembang Lokal**: Lingkungan lokal (`localhost`, `127.0.0.1`, `*.test`) otomatis dibebaskan (*bypassed*) agar proses development/coding pengembang tidak terganggu.
 
 ---
 

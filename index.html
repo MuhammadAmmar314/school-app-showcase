@@ -205,168 +205,42 @@
                             Halaman publik pendaftaran calon siswa tanpa login, verifikasi berkas dinamis, cetak bukti registrasi, dan cek kelulusan.
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UI Screenshot Gallery Showcase -->
-    <section id="screenshots" class="py-5 bg-white border-top border-bottom">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <span class="badge badge-soft-primary px-3 py-1 rounded-pill small mb-2 fw-semibold">Visual Preview</span>
-                <h2 class="fw-bold text-slate-900">Tangkapan Layar Sistem Nyata</h2>
-                <p class="text-muted small mx-auto" style="max-width: 580px;">
-                    Desain korporat modern dengan palet warna Slate Navy yang bersih, elegan, dan siap digunakan langsung untuk instansi pendidikan.
-                </p>
-
-                <!-- Navigation Tabs -->
-                <ul class="nav nav-pills justify-content-center gap-2 mt-4" id="screenshotTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active px-4 py-2" id="tab-admin" data-bs-toggle="pill" data-bs-target="#content-admin" type="button" role="tab">🏛️ Portal Admin</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link px-4 py-2" id="tab-guru" data-bs-toggle="pill" data-bs-target="#content-guru" type="button" role="tab">👨‍🏫 Portal Guru</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link px-4 py-2" id="tab-siswa" data-bs-toggle="pill" data-bs-target="#content-siswa" type="button" role="tab">🎓 Portal Siswa</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link px-4 py-2" id="tab-ppdb" data-bs-toggle="pill" data-bs-target="#content-ppdb" type="button" role="tab">📝 PPDB Mandiri</button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="tab-content" id="screenshotTabsContent">
-                <!-- Admin Tab -->
-                <div class="tab-pane fade show active" id="content-admin" role="tabpanel">
-                    <div class="row g-4">
-                        <div class="col-12">
+                                <!-- License Tab -->
+                <div class="tab-pane fade" id="content-license" role="tabpanel">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-12 col-lg-7">
                             <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Dashboard Utama Admin (12 Indikator Data Sekolah)</span>
-                                <img src="screenshots/04_admin_dashboard.png" class="img-fluid rounded border w-100" alt="Admin Dashboard">
+                                <span class="d-block px-3 py-2 fw-bold small text-muted">Layar Aktivasi Lisensi & Validasi Domain Kriptografis (/license/activate)</span>
+                                <img src="screenshots/16_license_domain_manager.png" class="img-fluid rounded border w-100" alt="License Manager">
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Manajemen Data Siswa Terpadu</span>
-                                <img src="screenshots/05_admin_data_siswa.png" class="img-fluid rounded border w-100" alt="Data Siswa">
+                        <div class="col-12 col-lg-5">
+                            <div class="p-3">
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-2 px-3 py-1.5 rounded-pill small fw-semibold">Proteksi Anti Pembajakan</span>
+                                <h4 class="fw-bold text-slate-900 mb-3">Kontrol Kuota Kloning Terpadu (HMAC SHA-256)</h4>
+                                <p class="text-muted small mb-3">
+                                    Setiap License Key ditandatangani secara kriptografis sehingga pembeli tidak dapat memanipulasi kuota instalasi.
+                                </p>
+                                <ul class="list-unstyled small d-flex flex-column gap-2 mb-4">
+                                    <li class="d-flex align-items-start gap-2">
+                                        <span class="text-success fw-bold">✓</span>
+                                        <span><strong>Single School</strong>: Terkunci otomatis pada 1 domain aktif.</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <span class="text-success fw-bold">✓</span>
+                                        <span><strong>Multi-School</strong>: Auto-bind hingga 5 domain sekolah (domain ke-6 otomatis terkunci).</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <span class="text-success fw-bold">✓</span>
+                                        <span><strong>Enterprise White-Label</strong>: Tanpa batasan kuota domain (unlimited).</span>
+                                    </li>
+                                    <li class="d-flex align-items-start gap-2">
+                                        <span class="text-success fw-bold">✓</span>
+                                        <span><strong>CLI Generator</strong>: Perintah bawaan <code>php artisan license:generate</code> untuk memudahkan Anda menerbitkan kunci bagi pembeli.</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Manajemen Kepegawaian & Guru Pengajar</span>
-                                <img src="screenshots/05b_admin_data_guru.png" class="img-fluid rounded border w-100" alt="Data Guru">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Penjadwalan Pelajaran KBM Mingguan</span>
-                                <img src="screenshots/06_admin_jadwal_pelajaran.png" class="img-fluid rounded border w-100" alt="Jadwal Pelajaran">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Modul Pengaturan Sekolah Dinamis (White-Label)</span>
-                                <img src="screenshots/09_admin_pengaturan_identitas.png" class="img-fluid rounded border w-100" alt="Pengaturan Sekolah">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Guru Tab -->
-                <div class="tab-pane fade" id="content-guru" role="tabpanel">
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Dashboard Guru Pengajar & Ringkasan KBM</span>
-                                <img src="screenshots/10_portal_guru_dashboard.png" class="img-fluid rounded border w-100" alt="Dashboard Guru">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Lembar Presensi Kehadiran Siswa Per Rombel</span>
-                                <img src="screenshots/11_portal_guru_presensi.png" class="img-fluid rounded border w-100" alt="Presensi Siswa Guru">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Input Nilai Evaluasi Belajar & Konversi Predikat Otomatis</span>
-                                <img src="screenshots/12_portal_guru_input_nilai.png" class="img-fluid rounded border w-100" alt="Input Nilai Guru">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Siswa Tab -->
-                <div class="tab-pane fade" id="content-siswa" role="tabpanel">
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Dashboard Peserta Didik & Wali Murid</span>
-                                <img src="screenshots/13_portal_siswa_dashboard.png" class="img-fluid rounded border w-100" alt="Dashboard Siswa">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Transkrip Nilai & e-Rapor Format Resmi Siap Cetak</span>
-                                <img src="screenshots/14_portal_siswa_nilai_rapor.png" class="img-fluid rounded border w-100" alt="e-Rapor Siswa">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Monitoring Tagihan Pembayaran SPP Mandiri</span>
-                                <img src="screenshots/15_portal_siswa_keuangan_spp.png" class="img-fluid rounded border w-100" alt="Tagihan SPP Siswa">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PPDB Tab -->
-                <div class="tab-pane fade" id="content-ppdb" role="tabpanel">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-8">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Formulir Pendaftaran Siswa Baru (Tanpa Login)</span>
-                                <img src="screenshots/01_ppdb_form_pendaftaran.png" class="img-fluid rounded border w-100" alt="Formulir PPDB">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card-custom p-2 overflow-hidden shadow-sm">
-                                <span class="d-block px-3 py-2 fw-bold small text-muted">Pelacakan Status Kelulusan Berkas</span>
-                                <img src="screenshots/02_ppdb_cek_status.png" class="img-fluid rounded border w-100" alt="Cek Status PPDB">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-                        <div class="fs-1 mb-2">👨‍🏫</div>
-                        <h5 class="fw-bold text-slate-900 mb-2">Portal Guru</h5>
-                        <p class="text-muted small mb-0">
-                            Jadwal mengajar harian, presensi batch kelas yang diampu, lembar input nilai skala 0–100, dan pembinaan ekstrakurikuler.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card-custom p-4 h-100">
-                        <div class="fs-1 mb-2">🎒</div>
-                        <h5 class="fw-bold text-slate-900 mb-2">Portal Siswa</h5>
-                        <p class="text-muted small mb-0">
-                            Jadwal mingguan, pemantauan kehadiran, lembar hasil belajar e-Rapor siap cetak, tagihan SPP, dan buku perpustakaan.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card-custom p-4 h-100">
-                        <div class="fs-1 mb-2">📝</div>
-                        <h5 class="fw-bold text-slate-900 mb-2">Portal PPDB</h5>
-                        <p class="text-muted small mb-0">
-                            Formulir pendaftaran calon siswa daring, penerbitan kartu nomor registrasi siap cetak, dan lacak status seleksi berkas.
-                        </p>
                     </div>
                 </div>
             </div>
