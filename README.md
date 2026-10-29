@@ -25,6 +25,61 @@ Dirancang khusus dengan arsitektur **White-Label**, memungkinkan Anda atau agens
 
 ---
 
+## 📸 Tangkapan Layar Sistem (Screenshot Preview)
+
+Berikut adalah preview tampilan antarmuka nyata dari sistem SekolahApp dengan standar desain modern *Corporate Slate*:
+
+### 1. Dashboard Utama Administrator (16 Modul SIMS)
+![Admin Dashboard](screenshots/04_admin_dashboard.png)
+
+---
+
+### 2. Modul Akademik & Kepegawaian (Data Siswa & Pendidik)
+| Data Siswa Terpadu | Data Tenaga Pendidik |
+| :---: | :---: |
+| ![Data Siswa](screenshots/05_admin_data_siswa.png) | ![Data Guru](screenshots/05b_admin_data_guru.png) |
+
+---
+
+### 3. Penjadwalan Pelajaran & Keuangan SPP
+| Jadwal KBM Mingguan | Manajemen Tagihan & Kas SPP |
+| :---: | :---: |
+| ![Jadwal Pelajaran](screenshots/06_admin_jadwal_pelajaran.png) | ![Keuangan SPP](screenshots/07_admin_keuangan_spp.png) |
+
+---
+
+### 4. Pengaturan Identitas Sekolah Dinamis (White-Label)
+Ubah profil sekolah, kepala sekolah, logo, tahun ajaran, dan kuota PPDB secara instan melalui web:
+![Pengaturan Sekolah](screenshots/09_admin_pengaturan_identitas.png)
+
+---
+
+### 5. Portal Mandiri Guru Pengajar (`/teacher/*`)
+Akses khusus guru untuk jadwal mengajar, presensi siswa rombel, dan input nilai capaian:
+![Portal Guru Dashboard](screenshots/10_portal_guru_dashboard.png)
+
+| Lembar Presensi Siswa Cepat | Input Nilai Rapor & Grade Otomatis |
+| :---: | :---: |
+| ![Presensi Guru](screenshots/11_portal_guru_presensi.png) | ![Nilai Guru](screenshots/12_portal_guru_input_nilai.png) |
+
+---
+
+### 6. Portal Peserta Didik / Siswa (`/student/*`)
+Akses mandiri siswa untuk memantau kehadiran belajar, nilai rapor, dan status pembayaran SPP:
+![Portal Siswa Dashboard](screenshots/13_portal_siswa_dashboard.png)
+
+| Lembar Nilai & e-Rapor Cetak | Rekap Tagihan SPP Mandiri |
+| :---: | :---: |
+| ![Nilai Rapor Siswa](screenshots/14_portal_siswa_nilai_rapor.png) | ![Tagihan SPP Siswa](screenshots/15_portal_siswa_keuangan_spp.png) |
+
+---
+
+### 7. Portal Publik Calon Siswa (PPDB Online)
+Formulir pendaftaran calon siswa tanpa login dengan penerbitan bukti pendaftaran resmi dan cek status online:
+![Formulir PPDB Online](screenshots/01_ppdb_form_pendaftaran.png)
+
+---
+
 ## 🌟 4 Portal Pengguna Terintegrasi (Strict Multi-Role RBAC)
 
 Aplikasi ini membagi hak akses ke dalam 4 portal terisolasi:
