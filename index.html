@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SekolahApp — Master Project SIMS & PPDB Online Terpadu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .hero-section {
+            background-color: #0f172a;
+            background-image: radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.25) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(15, 23, 42, 1) 0px, transparent 50%);
+            border-bottom: 1px solid #1e293b;
+        }
+        .badge-soft-primary {
+            background-color: rgba(37, 99, 235, 0.12);
+            color: #2563eb;
+            border: 1px solid rgba(37, 99, 235, 0.25);
+        }
+        .card-custom {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            background: #ffffff;
+            transition: all 0.2s ease-in-out;
+        }
+        .card-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border-color: #cbd5e1;
+        }
+        .pricing-card-featured {
+            border: 2px solid #2563eb;
+            box-shadow: 0 15px 30px -10px rgba(37, 99, 235, 0.15);
+        }
+        .nav-pills .nav-link.active {
+            background-color: #0f172a;
+            color: #ffffff;
+        }
+        .nav-pills .nav-link {
+            color: #64748b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-slate-900" href="#">
+                <span class="p-2 bg-primary text-white rounded-3 d-inline-flex align-items-center justify-content-center" style="width:34px;height:34px;">
+                    🎓
+                </span>
+                <span>SEKOLAH<span class="text-primary">APP</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3" href="#fitur">Fitur & 16 Modul</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#portal">4 Portal Multi-Role</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#harga">Harga Lisensi</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#faq">FAQ</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Admin%2C%20saya%20tertarik%20membeli%20Source%20Code%20Master%20SekolahApp" target="_blank" class="btn btn-primary px-4 py-2 fw-semibold shadow-sm">
+                            Beli Source Code
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white py-5 py-lg-6">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-7">
+                    <span class="badge bg-primary px-3 py-1.5 rounded-pill small fw-medium mb-3">
+                        Master Template SIMS & PPDB Enterprise v2.0
+                    </span>
+                    <h1 class="display-5 fw-bold mb-3 text-white" style="line-height: 1.2;">
+                        Sistem Informasi Manajemen Sekolah Terlengkap & Modern
+                    </h1>
+                    <p class="lead text-slate-300 fs-6 mb-4" style="color: #cbd5e1; max-width: 600px; line-height: 1.6;">
+                        Source code siap pakai dibangun dengan <strong>Laravel 10 + React 18 (Inertia.js) + Vite</strong>. Dilengkapi 16 modul operasional lengkap, 4 portal terisolasi (Admin, Guru, Siswa, PPDB), dan arsitektur <em>White-Label</em> yang sangat mudah di-clone untuk banyak sekolah.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20membeli%20Source%20Code%20Master%20SekolahApp" target="_blank" class="btn btn-primary btn-lg fs-6 px-4 py-2.5 shadow-sm fw-semibold">
+                            💬 Order Source Code Sekarang
+                        </a>
+                        <a href="#fitur" class="btn btn-outline-light btn-lg fs-6 px-4 py-2.5">
+                            Jelajahi 16 Modul
+                        </a>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 pt-3 border-top border-white border-opacity-10 small text-slate-400">
+                        <span>✅ 100% Full Source Code</span>
+                        <span>•</span>
+                        <span>✅ 51 Automated Tests Lulus</span>
+                        <span>•</span>
+                        <span>✅ Dokumentasi Lengkap</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 p-4 text-dark bg-white">
+                        <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
+                            <span class="fw-bold text-slate-900 fs-6">Detail Paket Komersial</span>
+                            <span class="badge bg-success-subtle text-success border border-success-subtle">Ready to Clone</span>
+                        </div>
+                        <ul class="list-unstyled mb-4 d-flex flex-column gap-2.5 small">
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="text-primary fw-bold">✓</span>
+                                <span><strong>16 Modul Fungsional</strong> tanpa kekurangan</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="text-primary fw-bold">✓</span>
+                                <span><strong>Portal Guru</strong> (KBM, Batch Absen, Input Nilai)</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="text-primary fw-bold">✓</span>
+                                <span><strong>Portal Siswa</strong> (e-Rapor Siap Cetak, SPP, Perpustakaan)</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="text-primary fw-bold">✓</span>
+                                <span><strong>PPDB Online Mandiri</strong> & Cetak Kartu Registrasi</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="text-primary fw-bold">✓</span>
+                                <span><strong>Kustomisasi Instan</strong> via GUI Web & File <code>.env</code></span>
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <span class="text-primary fw-bold">✓</span>
+                                <span><strong>Database Seeder Lengkap</strong> (Dummy siap demo)</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20membeli%20Source%20Code%20Master%20SekolahApp" target="_blank" class="btn btn-success w-100 py-2.5 fw-bold shadow-sm">
+                            Beli Lisensi Resmi (Mulai Rp 1.5jt)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4 Portals Interactive Section -->
+    <section id="portal" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="badge badge-soft-primary px-3 py-1 rounded-pill small mb-2 fw-semibold">Arsitektur Multi-Role</span>
+                <h2 class="fw-bold text-slate-900">4 Portal Pengguna Berbeda Sesuai Kebutuhan</h2>
+                <p class="text-muted small mx-auto" style="max-width: 520px;">
+                    Setiap hak akses memiliki rute dan tampilan khusus yang terisolasi dengan proteksi middleware RBAC.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-custom p-4 h-100">
+                        <div class="fs-1 mb-2">🏛️</div>
+                        <h5 class="fw-bold text-slate-900 mb-2">Portal Admin</h5>
+                        <p class="text-muted small mb-0">
+                            Pusat kendali 16 modul SIMS: Master Siswa, Guru, Ruang Kelas, Mapel, Jadwal, Rekap Keuangan SPP, PPDB, dan Pengaturan Sekolah.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-custom p-4 h-100">
+                        <div class="fs-1 mb-2">👨‍🏫</div>
+                        <h5 class="fw-bold text-slate-900 mb-2">Portal Guru</h5>
+                        <p class="text-muted small mb-0">
+                            Jadwal mengajar harian, presensi batch kelas yang diampu, lembar input nilai skala 0–100, dan pembinaan ekstrakurikuler.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-custom p-4 h-100">
+                        <div class="fs-1 mb-2">🎒</div>
+                        <h5 class="fw-bold text-slate-900 mb-2">Portal Siswa</h5>
+                        <p class="text-muted small mb-0">
+                            Jadwal mingguan, pemantauan kehadiran, lembar hasil belajar e-Rapor siap cetak, tagihan SPP, dan buku perpustakaan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card-custom p-4 h-100">
+                        <div class="fs-1 mb-2">📝</div>
+                        <h5 class="fw-bold text-slate-900 mb-2">Portal PPDB</h5>
+                        <p class="text-muted small mb-0">
+                            Formulir pendaftaran calon siswa daring, penerbitan kartu nomor registrasi siap cetak, dan lacak status seleksi berkas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16 Modules Breakdown -->
+    <section id="fitur" class="py-5 bg-white border-top border-bottom">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="badge badge-soft-primary px-3 py-1 rounded-pill small mb-2 fw-semibold">Kelengkapan Sistem</span>
+                <h2 class="fw-bold text-slate-900">16 Modul Terpadu Tanpa Perlu Modul Tambahan</h2>
+                <p class="text-muted small mx-auto" style="max-width: 580px;">
+                    Semua modul telah siap digunakan, terhubung satu sama lain dengan relasi database MySQL yang solid dan performa tinggi.
+                </p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">1. Autentikasi & RBAC</div>
+                        <div class="text-muted small">Proteksi middleware strict <code>role:admin</code>, <code>role:teacher</code>, <code>role:student</code> dengan redirect otomatis.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">2. Dashboard Eksekutif</div>
+                        <div class="text-muted small">12 KPI metric cards data sekolah, salam personal, dan tombol pintas ke seluruh operasional.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">3. Data Siswa</div>
+                        <div class="text-muted small">Pendaftaran peserta didik dengan validasi unik NIS, rombel kelas, dan auto-generate akun login.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">4. Data Guru & Pendidik</div>
+                        <div class="text-muted small">Manajemen NIP unik, gelar, email dinas, dan akun login pendidik untuk akses portal guru.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">5. Ruang Kelas (Rombel)</div>
+                        <div class="text-muted small">Pengelolaan ruang belajar dengan counter jumlah siswa terdaftar secara otomatis dan real-time.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">6. Mata Pelajaran</div>
+                        <div class="text-muted small">Relasi Many-to-Many ke guru pengampu mapel via tabel pivot, penataan kurikulum sekolah.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">7. Jadwal Pelajaran</div>
+                        <div class="text-muted small">Penetapan jadwal mingguan (Senin s.d. Sabtu, JP Mulai, Durasi JP, Ruang Kelas, Mapel, Guru).</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">8. Presensi / Absensi Siswa</div>
+                        <div class="text-muted small">Pencatatan kehadiran massal (Batch Attendance), tombol cepat satu klik, dan rekapitulasi kehadiran.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">9. Penilaian & e-Rapor</div>
+                        <div class="text-muted small">Input nilai angka 0–100, konversi otomatis grade A/B/C/D, status KKM, dan cetak rapor siap unduh.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">10. Keuangan & SPP</div>
+                        <div class="text-muted small">Invoicing tagihan SPP rutin, uang gedung, pencatatan transaksi tunai/transfer, dan riwayat pembayaran.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">11. Perpustakaan Digital</div>
+                        <div class="text-muted small">Katalog buku fisik (ISBN, rak, stok), pencatatan sirkulasi peminjaman siswa, jatuh tempo, dan denda.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">12. PPDB Online Terpadu</div>
+                        <div class="text-muted small">Pendaftaran mandiri calon siswa baru, penerbitan kartu registrasi resmi, dan pelacakan kelulusan.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">13. Bimbingan Konseling (BK)</div>
+                        <div class="text-muted small">Rekam bobot poin pelanggaran tata tertib dan apresiasi poin prestasi, sesi konseling siswa.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">14. Ekstrakurikuler</div>
+                        <div class="text-muted small">Pengelolaan klub bakat minat, penunjukan guru pembina, keanggotaan, dan penilaian predikat rapor.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                        <div class="fw-bold text-slate-900 mb-1">15. Papan Pengumuman</div>
+                        <div class="text-muted small">Penerbitan warta resmi sekolah dengan filter target audiens (Semua, Khusus Guru, Khusus Siswa).</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="p-3 border rounded-3 bg-light h-100 border-primary">
+                        <div class="fw-bold text-primary mb-1">16. Identitas Sekolah (Master Settings)</div>
+                        <div class="text-muted small">Kustomisasi nama sekolah, logo, NPSN, kepala sekolah, KKM, kalender akademik via GUI Web & <code>.env</code>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="harga" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="badge badge-soft-primary px-3 py-1 rounded-pill small mb-2 fw-semibold">Pilihan Lisensi</span>
+                <h2 class="fw-bold text-slate-900">Dapatkan Source Code Master Sekarang</h2>
+                <p class="text-muted small mx-auto" style="max-width: 520px;">
+                    Investasi sekali bayar, bebas biaya bulanan, dan tanpa batasan jumlah siswa/guru.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Single School -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-custom p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-light text-dark border mb-3">Lisensi 1 Sekolah</span>
+                            <h4 class="fw-bold text-slate-900 mb-1">Single School</h4>
+                            <p class="text-muted small mb-3">Untuk kebutuhan 1 instansi sekolah mandiri.</p>
+                            <div class="h2 fw-bold text-slate-900 mb-4">
+                                Rp 1.500.000 <span class="fs-6 fw-normal text-muted">/ sekali bayar</span>
+                            </div>
+
+                            <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                                <li>✓ Full Source Code Laravel + React</li>
+                                <li>✓ 16 Modul SIMS Lengkap</li>
+                                <li>✓ Hak Ganti Nama & Logo Sekolah</li>
+                                <li>✓ 51 Automated Tests Suite</li>
+                                <li>✓ Bantuan Instalasi 1 Bulan</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20membeli%20Paket%20Single%20School%20SekolahApp" target="_blank" class="btn btn-outline-primary w-100 py-2.5 fw-semibold">
+                            Beli Paket Single
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Multi-School Agency -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-custom pricing-card-featured p-4 h-100 d-flex flex-column justify-content-between position-relative">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-primary px-3 py-1.5 rounded-pill small shadow-sm">
+                            Paling Populer untuk Agensi
+                        </span>
+                        <div>
+                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-3">Lisensi Agensi / Freelancer</span>
+                            <h4 class="fw-bold text-slate-900 mb-1">Multi-School</h4>
+                            <p class="text-muted small mb-3">Kloning dan jual ke hingga 5 sekolah berbeda.</p>
+                            <div class="h2 fw-bold text-primary mb-4">
+                                Rp 3.500.000 <span class="fs-6 fw-normal text-muted">/ sekali bayar</span>
+                            </div>
+
+                            <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                                <li>✓ Full Source Code Unencrypted</li>
+                                <li>✓ Hak Kloning hingga 5 Sekolah</li>
+                                <li>✓ Bebas Jual Jasa Instalasi ke Klien</li>
+                                <li>✓ Dokumentasi Lengkap & ERD</li>
+                                <li>✓ Bantuan Teknis Prioritas 3 Bulan</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20membeli%20Paket%20Multi-School%20SekolahApp" target="_blank" class="btn btn-primary w-100 py-2.5 fw-semibold shadow-sm">
+                            Beli Paket Multi-School
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Full White-Label -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card-custom p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="badge bg-dark text-white mb-3">Enterprise White-Label</span>
+                            <h4 class="fw-bold text-slate-900 mb-1">Unlimited Master</h4>
+                            <p class="text-muted small mb-3">Kloning tanpa batas untuk perusahaan software house.</p>
+                            <div class="h2 fw-bold text-slate-900 mb-4">
+                                Hubungi Kami <span class="fs-6 fw-normal text-muted">/ negosiasi</span>
+                            </div>
+
+                            <ul class="list-unstyled mb-4 d-flex flex-column gap-2 small">
+                                <li>✓ Full Master Repository Rights</li>
+                                <li>✓ Unlimited Kloning Sekolah</li>
+                                <li>✓ Hak Reseller Penuh</li>
+                                <li>✓ Panduan Customization & Scaling</li>
+                                <li>✓ Akses Update Berkelanjutan</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20konsultasi%20Paket%20Unlimited%20White-Label%20SekolahApp" target="_blank" class="btn btn-outline-dark w-100 py-2.5 fw-semibold">
+                            Konsultasi via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-white border-top">
+        <div class="container py-4" style="max-width: 800px;">
+            <div class="text-center mb-5">
+                <h3 class="fw-bold text-slate-900">Pertanyaan yang Sering Diajukan</h3>
+                <p class="text-muted small">Jawaban untuk pertanyaan umum seputar pembelian source code.</p>
+            </div>
+
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item border rounded-3 mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Apakah saya mendapatkan full source code tanpa enkripsi?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body small text-muted">
+                            Ya, 100% source code diberikan utuh tanpa file terenkripsi. Anda memiliki kontrol penuh atas kode backend Laravel dan frontend React.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border rounded-3 mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Bagaimana cara saya menerima source code setelah membayar?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body small text-muted">
+                            Setelah konfirmasi pembayaran, akun GitHub Anda akan langsung kami undang (*invite collaborator*) ke repositori privat master, atau dikirimi link unduhan paket arsip ZIP lengkap beserta panduan instalasi langkah-demi-langkah.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item border rounded-3 mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Apakah aplikasi ini mudah di-deploy ke hosting / VPS?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body small text-muted">
+                            Sangat mudah! Aplikasi standar Laravel 10 + Vite, dapat dijalankan di cPanel/DirectAdmin shared hosting, VPS Ubuntu (Nginx/Apache), maupun server lokal seperti Laragon / XAMPP.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center small">
+        <div class="container">
+            <p class="mb-1 fw-bold text-slate-200">SekolahApp — Master Project SIMS & PPDB Online Terpadu</p>
+            <p class="text-muted mb-0">Hak Cipta Dilindungi Undang-Undang © 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
